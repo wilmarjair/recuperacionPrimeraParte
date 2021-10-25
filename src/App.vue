@@ -9,11 +9,11 @@
           <section-api></section-api>
         </div>
 
-<!-- Esta es la tarjeta de miembros que nos piden pero al parecer estamos enviando las props de mala manera o con un nombre no correcro -->
+<!-- Esta es la tarjeta de members que nos piden pero al parecer estamos enviando las props de mala manera o con un nombre no correcro -->
     <div class="container-fluid">
       <div class="row justify-content-center mb-5">
         <div class="col mt-5" v-for="(item, index) of team" :key="index">
-          <team-card :miembro="item"></team-card>
+          <team-card :member="item"></team-card>
         </div>
       </div>
     </div>
@@ -41,49 +41,49 @@ export default {
     return {
       title: "Vivo dentro de VUE",
       carousel1 : 'carousel1',
-      // Esta es la definición del objeto team, el objeto contiene la info de cada miembro del equipo
+      // Esta es la definición del objeto team, el objeto contiene la info de cada member del equipo
       // Se esta enviando correctamente en el ciclo v-for pero las pruebas fallan
       // Al parecer tenemos un problema con la definición de los nombres de los atributos
       team: [
         {
-          id: 1,
+          codigo: 1,
           nombre: "Integrante 1",
           descripcion:
             "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis, laudantium tempore, provident corporis iure ex libero repellendus accusamus accusantium at voluptate excepturi voluptatem quis, illo modi exercitationem error consequatur.",
           rol: "Desarrollador backend",
-          img: "https://placeimg.com/192/192/people",
+          imagen: "https://placeimg.com/192/192/people",
         },
         {
-          id: 2,
+          codigo: 2,
           nombre: "Integrante 2",
           descripcion:
             "2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis, laudantium tempore, provident corporis iure ex libero repellendus accusamus accusantium at voluptate excepturi voluptatem quis, illo modi exercitationem error consequatur.",
           rol: "Desarrollador backend",
-          img: "https://placeimg.com/192/192/nature",
+          imagen: "https://placeimg.com/192/192/nature",
         },
         {
-          id: 3,
+          codigo: 3,
           nombre: "Integrante 3",
           descripcion:
             "3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis, laudantium tempore, provident corporis iure ex libero repellendus accusamus accusantium at voluptate excepturi voluptatem quis, illo modi exercitationem error consequatur.",
           rol: "Desarrollador backend",
-          img: "https://placeimg.com/192/192/architecture",
+          imagen: "https://placeimg.com/192/192/architecture",
         },
         {
-          id: 4,
+          codigo: 4,
           nombre: "Integrante 4",
           descripcion:
             "4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis, laudantium tempore, provident corporis iure ex libero repellendus accusamus accusantium at voluptate excepturi voluptatem quis, illo modi exercitationem error consequatur.",
           rol: "Desarrollador backend",
-          img: "https://placeimg.com/192/192/animals",
+          imagen: "https://placeimg.com/192/192/animals",
         },
         {
-          id: 5,
+          codigo: 5,
           nombre: "Integrante 5",
           descripcion:
             "5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis, laudantium tempore, provident corporis iure ex libero repellendus accusamus accusantium at voluptate excepturi voluptatem quis, illo modi exercitationem error consequatur.",
           rol: "Desarrollador backend",
-          img: "https://placeimg.com/192/192/any",
+          imagen: "https://placeimg.com/192/192/any",
         },
       ],
     };
